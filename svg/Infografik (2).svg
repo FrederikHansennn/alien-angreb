@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/infographic.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="instruction">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
-
-    <main>
-      <h1>INSTRUKTION</h1>
-      <p>Underoverskrift</p>
-      <section class="info-graphic">
-        <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484.95 640.35">
   <defs>
     <style>
@@ -220,70 +181,22 @@
     <path class="cls-2" d="M160.58,288.24c2.47,14.43,12.15,28.14,26.62,37.68"/>
     <path class="cls-2" d="M51.1,319.18c-6.14,13.29-5.93,30.07.58,46.13"/>
   </g>
-  <g id="HotspotSjaelland">
+  <g id="Hotspot-Sjaelland">
     <circle class="cls-4" cx="397.55" cy="433.21" r="25.97"/>
     <g class="cls-11">
       <text class="cls-12" transform="translate(387.88 441.46) scale(1.07 1)"><tspan x="0" y="0">3</tspan></text>
     </g>
   </g>
-  <g id="HotspotFyn">
+  <g id="Hotspot-Fyn">
     <g class="cls-11">
       <text class="cls-10" transform="translate(246.44 490.07) scale(.88 1)"><tspan x="0" y="0">2</tspan></text>
     </g>
     <ellipse class="cls-4" cx="254" cy="483.4" rx="23.21" ry="22.2"/>
   </g>
-  <g id="HotspotJylland">
+  <g id="Hotspot-jylland">
     <g class="cls-11">
       <text class="cls-13" transform="translate(92.68 270.97) scale(1.17 1)"><tspan x="0" y="0">1</tspan></text>
     </g>
     <circle class="cls-4" cx="97.26" cy="264.56" r="28.45"/>
   </g>
 </svg>
-
-<button id="Jylland">Jylland</button>
-<Button id="Fyn">Fyn</Button>
-<Button id="Sjaelland">Sjælland</Button>
-
-
-      </section>
-      <section class="info-text">
-        <h2>Overskrift</h2>
-        <article>
-          <p class="placeholder">INFO-TEKST</p>
-        </article>
-        <aside id="efficiency" class="info-box">INFO-BOX</aside>
-        <aside id="requirement" class="info-box">INFO-BOX</aside>
-      </section>
-    </main>
-
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-     <script src="js/instruction.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
-</html>

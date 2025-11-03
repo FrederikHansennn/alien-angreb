@@ -37,7 +37,7 @@ document.querySelector("#Reset").onclick = function () {
   document.querySelector("#Hotspot-Sjaelland circle").style.fill = "#a1cf6e";
 
   // Standardtekster
-  document.querySelector(".info-text h2").textContent = "sikkerhedanbefalinger for potentielle alien angreb I Danmark";
-  document.querySelector(".placeholder").textContent = "Klik på et område eller en knap for at se sikkerhedsanbefalinger for dit område.";
+  document.querySelector(".info-text h2").textContent = "Sikkerhedanbefalinger for potentielle alien angreb I Danmark";
+  document.querySelector(".placeholder").textContent = "Klik på en knap til et område, for at se sikkerhedsanbefalinger for dit område.";
   document.querySelector("#efficiency").textContent = "Generelle sikkerhedsanbefalinger vil blive vist her.";
   document.querySelector("#requirement").textContent = "Krav til sikkerhedsanbefalinger vil blive vist her." };

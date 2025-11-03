@@ -35,7 +35,72 @@
 
     <main>
       <h1>INDBERET</h1>
+      
       <section id="form-section">
+        <form>
+          <fieldset>
+            <legend>Personlige Oplysninger</legend>
+          <label for="full-name">Fulde Navn</label>
+          <input type="text" name="full-name" required />
+        
+          <label for="age">DIN ALDER</label>
+          <input type="number" name="age" required />
+
+          <label for="TLF NUMMER">TLF NUMMER</label>
+          <input type="tel" name="TLF NUMMER" required />
+
+          <label for="CPR NUMMER">CPR NUMMER</label>
+          <input type="number" name="CPR NUMMER" required />
+</fieldset>
+
+<fieldset>
+<legend>Alien oplysninger</legend>
+
+<label for="ANTAL ALIENS">ANTAL ALIENS</label>
+<input type="number" name="ANTAL ALIENS" required />
+
+<label for="Farve">Farve</label>
+<input type="text" name="Farve" required />
+
+<label for="ANTAL ØJNE">ANTAL ØJNE</label>
+<input type="number" name="ANTAL ØJNE" required />
+
+<label for="ANTAL ARME">ANTAL ARME</label>
+<input type="number" name="ANTAL ARME" required />
+</fieldset>
+
+
+<fIeldset>
+<legend>Oplysninger om hændelsen</legend>
+
+<label for="LANDSDEL">LANDSDEL</label>
+<select name="LANDSDEL" required>
+  <option value="JYLLAND">JYLLAND</option>
+  <option value="Fyn">FYN</option>
+  <option value="SJÆLLAND">SJÆLLAND</option>
+</select>
+
+<label for="BY">BY</label>
+<input type="text" name="BY" required />
+
+<label for="AFSTAND">AFSTAND TIL ALIEN (Meter)</label>
+<input type="number" name="AFSTAND" required />
+
+<label for="Bevæbnet">VAR ALIEN BEVÆBNET?</label>
+<input type="radio" name="Bevæbnet" value="Ja" required /> Ja
+<input type="radio" name="Bevæbnet" value="Nej" required /> Nej
+
+<label for="type">HVIS JA, HVILKEN TYPE VÅBEN VAR DET?</label>
+<input type="text" name="type" />
+</fIeldset>
+
+<button type="submit">Indsend</button>
+        
+        </form>
+
+
+
+
         <article id="form-info">
           <h2>Overskrift</h2>
           <p>Tekst</p>

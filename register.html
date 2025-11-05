@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/forms.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -37,66 +37,102 @@
       <h1>INDBERET</h1>
       
       <section id="form-section">
-        <form>
-          <fieldset>
-            <legend>Personlige Oplysninger</legend>
-          <label for="full-name">Fulde Navn</label>
-          <input type="text" name="full-name" required />
-        
-          <label for="age">DIN ALDER</label>
-          <input type="number" name="age" required />
+  <form>
+    <fieldset>
+      <legend>Personlige Oplysninger</legend>
 
-          <label for="TLF NUMMER">TLF NUMMER</label>
-          <input type="tel" name="TLF NUMMER" required />
+      <div>
+        <label for="full-name">Fulde Navn</label>
+        <input type="text" id="full-name" name="full-name" required />
+      </div>
 
-          <label for="CPR NUMMER">CPR NUMMER</label>
-          <input type="number" name="CPR NUMMER" required />
-</fieldset>
+      <div>
+        <label for="age">Din Alder</label>
+        <input type="number" id="age" name="age" required />
+      </div>
 
-<fieldset>
-<legend>Alien oplysninger</legend>
+      <div>
+        <label for="phone">Tlf. Nummer</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{8}" placeholder="8 cifre" />
+      </div>
 
-<label for="ANTAL ALIENS">ANTAL ALIENS</label>
-<input type="number" name="ANTAL ALIENS" required />
+      <div>
+        <label for="cpr">CPR Nummer</label>
+        <input type="number" id="cpr" name="cpr" pattern="[0-9]{6}-[0-9]{4}" required />
+      </div>
+    </fieldset>
 
-<label for="Farve">Farve</label>
-<input type="text" name="Farve" required />
+    <fieldset>
+      <legend>Alien Oplysninger</legend>
 
-<label for="ANTAL ØJNE">ANTAL ØJNE</label>
-<input type="number" name="ANTAL ØJNE" required />
+      <div>
+        <label for="antal-aliens">Antal Aliens</label>
+        <input type="number" id="antal-aliens" name="antal-aliens" required />
+      </div>
 
-<label for="ANTAL ARME">ANTAL ARME</label>
-<input type="number" name="ANTAL ARME" required />
-</fieldset>
+      <div>
+        <label for="farve">Farve</label>
+        <input type="text" id="farve" name="farve" required />
+      </div>
+
+      <div>
+        <label for="antal-ojne">Antal Øjne</label>
+        <input type="number" id="antal-ojne" name="antal-ojne" required />
+      </div>
+
+      <div>
+        <label for="antal-arme">Antal Arme</label>
+        <input type="number" id="antal-arme" name="antal-arme" required />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Oplysninger om Hændelsen</legend>
+
+      <div>
+        <label for="landsdel">Landsdel</label>
+        <select id="landsdel" name="landsdel" required>
+          <option value="">-- Vælg Landsdel --</option>
+          <option value="jylland">Jylland</option>
+          <option value="fyn">Fyn</option>
+          <option value="sjaelland">Sjælland</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="by">By</label>
+        <input type="text" id="by" name="by" required />
+      </div>
+
+      <div>
+      <label for="dato">Dato for hændelsen:</label>
+<input type="date" id="dato" name="dato " required />
+      </div>
+
+      
+      <div>
+        <label for="afstand">Afstand til Alien (meter)</label>
+        <input type="number" id="afstand" name="afstand" required />
+      </div>
+
+     <div class="radio-vaben-grid">
+  <label for="bevaebnet">Var alien bevæbnet?</label>
+  <div class="radio-group">
+    <label><input type="radio" name="bevaebnet" value="Ja" required> Ja</label>
+    <label><input type="radio" name="bevaebnet" value="Nej" required> Nej</label>
+  </div>
+
+  <label for="vaben-type">Hvis ja, hvilken type våben var det?</label>
+  <input type="text" id="vaben-type" name="vaben-type" />
+</div>
 
 
-<fIeldset>
-<legend>Oplysninger om hændelsen</legend>
+    </fieldset>
 
-<label for="LANDSDEL">LANDSDEL</label>
-<select name="LANDSDEL" required>
-  <option value="JYLLAND">JYLLAND</option>
-  <option value="Fyn">FYN</option>
-  <option value="SJÆLLAND">SJÆLLAND</option>
-</select>
+    <button type="submit">Indsend</button>
+  </form>
+</section>
 
-<label for="BY">BY</label>
-<input type="text" name="BY" required />
-
-<label for="AFSTAND">AFSTAND TIL ALIEN (Meter)</label>
-<input type="number" name="AFSTAND" required />
-
-<label for="Bevæbnet">VAR ALIEN BEVÆBNET?</label>
-<input type="radio" name="Bevæbnet" value="Ja" required /> Ja
-<input type="radio" name="Bevæbnet" value="Nej" required /> Nej
-
-<label for="type">HVIS JA, HVILKEN TYPE VÅBEN VAR DET?</label>
-<input type="text" name="type" />
-</fIeldset>
-
-<button type="submit">Indsend</button>
-        
-        </form>
 
 
 

@@ -1,6 +1,6 @@
 console.log("instruction.js loaded");
 
-// Klik på knapper
+/* JS TIL JYLLAND HOTSPOT */
 document.querySelector("#Jylland").onclick = function () {
   console.log("Jylland clicked");
   document.querySelector("#Hotspot-jylland circle").style.fill = "red";
@@ -10,6 +10,7 @@ document.querySelector("#efficiency"). textContent = "Er Jylland angrbet søg st
 document.querySelector("#requirement"). textContent ="Er det muligt at komme væk fra Herning, søg mod sydvest mod Esbjerg, Aliens angriber sjældent byer med havne.";
 };
 
+/* JS TIL FYN HOTSPOT */
 document.querySelector("#Fyn").onclick = function () {
   console.log("Fyn clicked");
   document.querySelector("#Hotspot-Fyn ellipse").style.fill = "red";
@@ -18,7 +19,7 @@ document.querySelector("#Fyn").onclick = function () {
 document.querySelector("#efficiency"). textContent = "Er Fyn angrebet søg straks mod Langeland, Aliens har svært ved at navigere på øer og vil ofte overse dem.";
 document.querySelector("#requirement"). textContent ="I tilfælde af et angreb på Fyn, pas på de ikke får fat i Brunsviger, vi ved stadig ikke hvad det gør ved dem.";
 };
-
+/* JS TIL SJÆLLAND HOTSPOT */
 document.querySelector("#Sjaelland").onclick = function () {
   console.log("Sjælland clicked");
   document.querySelector("#Hotspot-Sjaelland circle").style.fill = "red";
@@ -28,6 +29,7 @@ document.querySelector("#efficiency"). textContent = "Er Sjælland angrebet er d
 document.querySelector("#requirement"). textContent ="Med alt værdifuldt menes der statsarv, bla kronjuvelerne og andet af særlig høj værdi. Nej din surdej er ikke inkluderet.";
 };
 
+/* JS TIL RESET KNAPPEN */
 document.querySelector("#Reset").onclick = function () {
   console.log("Reset clicked");
 

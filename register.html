@@ -36,119 +36,137 @@
     <main>
       <h1>INDBERET</h1>
       
-      <section id="form-section">
-  <form>
-    <fieldset>
-      <legend>Personlige Oplysninger</legend>
+<!-- WRAPPER med form + summary -->
+<section id="form-wrapper">
 
-      <div>
-        <label for="full-name">Fulde Navn</label>
-        <input type="text" id="full-name" name="full-name" required />
-      </div>
+  <!-- FORMEN -->
+  <section id="form-section">
+    <form>
+      <fieldset>
+        <legend>Personlige Oplysninger</legend>
 
-      <div>
-        <label for="age">Din Alder</label>
-        <input type="number" id="age" name="age" required />
-      </div>
+        <div>
+          <label for="full-name">Fulde Navn</label>
+          <input type="text" id="full-name" name="full-name" required />
+        </div>
 
-      <div>
-        <label for="phone">Tlf. Nummer</label>
-        <input type="tel" id="phone" name="phone" required pattern="[0-9]{8}" placeholder="8 cifre" />
-      </div>
+        <div>
+          <label for="age">Din Alder</label>
+          <input type="number" id="age" name="age" required />
+        </div>
 
-      <div>
-        <label for="cpr">CPR Nummer</label>
-        <input type="number" id="cpr" name="cpr" pattern="[0-9]{6}-[0-9]{4}" required />
-      </div>
-    </fieldset>
+        <div>
+          <label for="phone">Tlf. Nummer</label>
+          <input type="tel" id="phone" name="phone" required pattern="[0-9]{8}" placeholder="8 cifre" />
+        </div>
 
-    <fieldset>
-      <legend>Alien Oplysninger</legend>
+        <div>
+          <label for="cpr">CPR Nummer</label>
+          <!-- bedre som text når du bruger pattern -->
+          <input type="text" id="cpr" name="cpr" pattern="[0-9]{6}-[0-9]{4}" placeholder="xxxxxx-xxxx" required />
+        </div>
+      </fieldset>
 
-      <div>
-        <label for="antal-aliens">Antal Aliens</label>
-        <input type="number" id="antal-aliens" name="antal-aliens" required />
-      </div>
+      <fieldset>
+        <legend>Alien Oplysninger</legend>
 
-      <div>
-        <label for="farve">Farve</label>
-        <input type="text" id="farve" name="farve" required />
-      </div>
+        <div>
+          <label for="antal-aliens">Antal Aliens</label>
+          <input type="number" id="antal-aliens" name="antal-aliens" required />
+        </div>
 
-      <div>
-        <label for="antal-ojne">Antal Øjne</label>
-        <input type="number" id="antal-ojne" name="antal-ojne" required />
-      </div>
+        <div>
+          <label for="farve">Farve</label>
+          <input type="text" id="farve" name="farve" required />
+        </div>
 
-      <div>
-        <label for="antal-arme">Antal Arme</label>
-        <input type="number" id="antal-arme" name="antal-arme" required />
-      </div>
-    </fieldset>
+        <div>
+          <label for="antal-ojne">Antal Øjne</label>
+          <input type="number" id="antal-ojne" name="antal-ojne" required />
+        </div>
 
-    <fieldset>
-      <legend>Oplysninger om Hændelsen</legend>
+        <div>
+          <label for="antal-arme">Antal Arme</label>
+          <input type="number" id="antal-arme" name="antal-arme" required />
+        </div>
+      </fieldset>
 
-      <div>
-        <label for="landsdel">Landsdel</label>
-        <select id="landsdel" name="landsdel" required>
-          <option value="">-- Vælg Landsdel --</option>
-          <option value="jylland">Jylland</option>
-          <option value="fyn">Fyn</option>
-          <option value="sjaelland">Sjælland</option>
-        </select>
-      </div>
+      <fieldset>
+        <legend>Oplysninger om Hændelsen</legend>
 
-      <div>
-        <label for="by">By</label>
-        <input type="text" id="by" name="by" required />
-      </div>
+        <div>
+          <label for="landsdel">Landsdel</label>
+          <select id="landsdel" name="landsdel" required>
+            <option value="">-- Vælg Landsdel --</option>
+            <option value="jylland">Jylland</option>
+            <option value="fyn">Fyn</option>
+            <option value="sjaelland">Sjælland</option>
+          </select>
+        </div>
 
-      <div>
-      <label for="dato">Dato for hændelsen:</label>
-<input type="date" id="dato" name="dato " required />
-      </div>
+        <div>
+          <label for="by">By</label>
+          <input type="text" id="by" name="by" required />
+        </div>
 
-      
-      <div>
-        <label for="afstand">Afstand til Alien (meter)</label>
-        <input type="number" id="afstand" name="afstand" required />
-      </div>
+        <div>
+          <label for="dato">Dato for hændelsen:</label>
+          <input type="date" id="dato" name="dato" required />
+        </div>
 
-     <div class="radio-vaben-grid">
-  <label for="bevaebnet">Var alien bevæbnet?</label>
-  <div class="radio-group">
-    <label><input type="radio" name="bevaebnet" value="Ja" required> Ja</label>
-    <label><input type="radio" name="bevaebnet" value="Nej" required> Nej</label>
-  </div>
+        <div>
+          <label for="afstand">Afstand til Alien (meter)</label>
+          <input type="number" id="afstand" name="afstand" required />
+        </div>
 
-  <label for="vaben-type">Hvis ja, hvilken type våben var det?</label>
-  <input type="text" id="vaben-type" name="vaben-type" />
-</div>
+        <div class="radio-vaben-grid">
+          <label for="bevaebnet">Var alien bevæbnet?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="bevaebnet" value="Ja" required> Ja</label>
+            <label><input type="radio" name="bevaebnet" value="Nej" required> Nej</label>
+          </div>
 
+          <label for="vaben-type">Hvis ja, hvilken type våben var det?</label>
+          <input type="text" id="vaben-type" name="vaben-type" />
+        </div>
+      </fieldset>
 
-    </fieldset>
+      <button type="submit">Indsend</button>
+    </form>
+  </section>
 
-    <button type="submit">Indsend</button>
-  </form>
+  <!-- SUMMARY -->
+  <section id="form-summary">
+    <h2>Summary</h2>
+    <article>
+      <p class="placeholder">Opsummering:</p>
+
+      <p class="placeholder">Personlige Oplysninger</p>
+      <p>Fulde navn: <span id="fulde_navn_output"></span></p>
+      <p>Din Alder: <span id="din_alder_output"></span></p>
+      <p>Tlf. Nummer: <span id="phone_output"></span></p>
+      <p>CPR Nummer: <span id="cpr_output"></span></p>
+
+      <p class="placeholder">Alien Oplysninger</p>
+      <p>Antal Aliens: <span id="antal_aliens_output"></span></p>
+      <p>Farve: <span id="farve_output"></span></p>
+      <p>Antal Øjne: <span id="antal_ojne_output"></span></p>
+      <p>Antal Arme: <span id="antal_arme_output"></span></p>
+
+      <p class="placeholder">Oplysninger om Hændelsen</p>
+      <p>Landsdel: <span id="landsdel_output"></span></p>
+      <p>By: <span id="by_output"></span></p>
+      <p>Dato for hændelsen: <span id="dato_output"></span></p>
+      <p>Afstand til Alien (meter): <span id="afstand_output"></span></p>
+      <p>Var alien bevæbnet?: <span id="bevaebnet_output"></span></p>
+      <p>Hvis ja, hvilken type våben var det?: <span id="vaben_type_output"></span></p>
+    </article>
+  </section>
+
 </section>
 
-
-
-
-
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
+    
+    
     </main>
     <footer>
       <nav class="some">

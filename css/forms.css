@@ -121,6 +121,17 @@ textarea:invalid:focus {
 }
 
 /* summary styling */
+.sum-personlige-oplysninger,
+.sum-alien-oplysninger,
+.sum-haendelse-oplysninger {
+  border: 4px solid #000;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  background-color: #f7e37d;
+  margin-bottom: 1rem; /* giver luft mellem boksene */
+}
+
+
 #form-summary h2 {
   line-height: 3rem;
   text-align: center;

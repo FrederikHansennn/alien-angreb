@@ -56,7 +56,7 @@
   width: fit-content;
 }
 
-/* dine små bredder */
+/* Små bredder */
 #form-section input[name="age"] {
   width: 64px;
   text-align: center;

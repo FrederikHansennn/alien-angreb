@@ -1,0 +1,12 @@
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+margin: auto;
+backdrop-filter: blur(10px); 
+}
+
+a img {
+  height: 60px;
+  width: auto;
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -18,7 +19,7 @@
     <header>
       <nav>
         <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
+          <a href="index.html"><img src="AAD-logo(2).svg" alt="Logo"></a>
         </div>
         <ul class="menu">
           <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
@@ -41,49 +42,99 @@
       </div>
     </section>
     <main>
-      <section id="daily">
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-        <article class="daily_card">
-          <img src="" alt="teaser_img" />
-          <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
-          </div>
-        </article>
-      </section>
+
+       <!-- Teaser 1 her -->
+     
+       <section id="daily">
+    <!-- Teaser 1 -->
+    <article class="daily_card">
+      <img class="daily_img" src="ufo-over-dk.png" alt="ufo over Danmark" />
+      <div class="daily_text">
+        <h2>Er du i tvivl om hvad du skal gøre i tilfælde af Alien angreb?</h2>
+        <details>
+          <summary>Se mere</summary>
+          <p>
+            Alien Alarm Danmark har produceret et interaktivt kort, hvor du kan
+            se hvad der gør sig gældende for netop din landsdel i tilfælde af
+            angreb. Klik på bjælken herunder for at komme til kortet.
+          </p>
+          <a href="instruction.html" class="cta_btn">Se kortet</a>
+        </details>
+      </div>
+    </article>
+
+    <!-- Teaser 2 -->
+    <article class="daily_card">
+      <img class="daily_img" src="alien-form.png" alt="teaser_img" />
+      <div class="daily_text">
+        <h2>Har du set en Alien i Danmark?
+          Her er hvad du skal gøre!
+        </h2>
+        <details>
+          <summary>Se mere</summary>
+        <p>Hvis du har set en Alien i Danmark skal du indrappotere det!
+          Alien Alarm Danmark har lavet en formular som du skal udfylde og indsende!
+          Klik på den orange bjælke herunder for at komme til formularen.
+        </p>
+        <a href="register.html" class="cta_btn">Se mere</a>
+      </details>
+      </div>
+    </article>
+  </section>
+      
       <section id="breaking">
+       
+       <!--  Artikel 1 her -->
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Uidentificeret Objekt Registreret</h3>
+          <p>Uidentificeret objekt over Danmark”
+          Et mystisk lys er observeret over landet. Myndighederne beroliger: der er ingen grund til panik — medmindre det blinker meget.</p>
+          <img src="ufo over dk.png" alt="ufo illustration" />
+        <button class="cta_btn" popovertarget="alien-popover1">Læs mere</button>
+            <div id="alien-popover1" popover>
+              <H3>Officiel meddelelse fra ALIEN ALAMR DANMARK</H3>
+              <H4>Borgere bedes forholde sig i ro: Uidentificeret objekt registreret over Danmark</H4>
+              <p>Myndighederne understreger, at der ikke er grund til panik – men anbefaler at trække gardinerne for og undgå at vinke.</p>
+            <P>Situationen vurderes som kontrolleret
+            Ifølge Alien Alarm Danmark er et større lysglimt observeret over Kattegat natten til tirsdag. Flere borgere rapporterer om høje lyde, svag brunsvigerduft og en usædvanlig trang til at kigge op. “Vi arbejder på at identificere objektet,” udtaler talsmanden. “Der er ingen tegn på fjendtlig aktivitet, men vi holder øje – meget intenst.”
+          </P>
+            </div>
         </article>
+        <!--  Artikel 2 her -->
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Satellit eller Noget Værre?</h3>
+          <p>Lys på himlen forvirrer danskerne igen. Alien Alarm Danmark minder om, at ikke alt, der blinker, er Elon Musk.</p>
+          <img src="alien-artikel2.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="alien-popover2">Læs mere</button>
+          <div id="alien-popover2" popover>
+            <H3>Officiel meddelelse fra ALIEN ALARM DANMARK</H3>
+            <H4>Myndigheder advarer: Mistænkelige objekter forvekslet med satellitter – igen</H4>
+            <p>Efter gentagne observationer over det sydlige Danmark opfordres borgere til at stoppe med at google “er det bare Starlink?”.
+              Billede: En håndtegnet ufo blandt satellitter, med et dansk flag nedenunder.</p>
+          <p>“Vi tager alle observationer seriøst”
+           Ifølge Alien Alarm Danmark har flere borgere rapporteret om lys på himlen, der bevæger sig i formation. “Vi forstår forvirringen,” siger talsmanden. “Men vi vil gerne minde om, at ikke alt der blinker, er Elon Musk.”
+            “Hold jer til jorden – bogstaveligt talt”
+            Indtil videre anbefales det at blive indendørs, holde kæledyr i snor, og undgå unødvendig kontakt med lysende skikkelser i haven. “Hvis du ser noget, der ikke burde være der, så noter tidspunktet – og løb den anden vej,” lyder den officielle anbefaling.</p>
+            </div>
         </article>
+       
+        <!--  Artikel 3 her -->
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Rumvæsner Stjæler Dansk Kultur</h3>
+          <p>Fra Lego til pølsehorn – intet er længere helligt. Alien Alarm Danmark undersøger en intergalaktisk samlermani mod alt, der lugter af hygge.</p>
+          <img src="alien-artikel3.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="alien-popover3">Læs mere</button>
+          <div id="alien-popover3" popover>
+            <H3>Officiel meddelelse fra ALIEN ALARM DANMARK</H3>
+            <H4>Rumvæsner viser interesse for dansk kulturarv – og det bekymrer eksperter</H4>
+            <p>Flere genstande er forsvundet fra museer, heriblandt et gammelt Lego-sæt og en halvspist pølsehornsreplik. </p>
+          <p>“De virker fascinerede – men selektive”
+Ifølge Alien Alarm Danmark har observatører bemærket, at rummets besøgende især interesserer sig for genstande med stærk følelsesmæssig værdi. “Vi mistede en hel hylde i Den Gamle By,” udtaler kulturkonsulent. “De tog kun ting fra 90’erne.”
+“Bevar roen og beskyt dine minder”
+Borgere rådes til at sikre personlige effekter som kassettebånd, familiealbum og julepynt. “Hvis du har en My Little Pony fra barndommen, gem den – de ved ikke, hvad det er, men de vil have den.”</p>
+            </div>
         </article>
+      
       </section>
     </main>
 

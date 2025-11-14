@@ -2,11 +2,24 @@
   max-height: 90vh;
   max-width: 50ch;
   width: 90vw;
-margin: auto;
-backdrop-filter: blur(10px); 
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background: white;
 }
+
+[popover]::backdrop {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.2);
+}
+
 
 a img {
   height: 60px;
   width: auto;
+}
+
+#sirene {
+  width: 120px;   /* eller en størrelse du synes passer */
+  height: auto;   /* beholder proportionerne */
 }

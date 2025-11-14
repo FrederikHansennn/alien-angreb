@@ -39,6 +39,12 @@ form.addEventListener("submit", function (event) {
   const bevaebnetInput = document.querySelector('input[name="bevaebnet"]:checked').value;
   const vabenTypeInput = document.querySelector("#vaben-type").value;
 
+  function cancelPopup(event) {
+  event.preventDefault();
+  form.querySelector(":user-invalid").focus();
+}
+
+
   // SÆTTER DATA IND I SUMMARY
   firstNameOutput.textContent = fullNameInput;
   ageOutput.textContent = ageInput;

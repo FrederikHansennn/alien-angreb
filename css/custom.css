@@ -1,21 +1,22 @@
 :root {
   /* Colours */
-  --color-bg: #FCEB94; /* page background /*
+  --color-bg: light-dark(#FCEB94, #1b1b1b); /* page background */
 
   /* Header */
-  --color-head-bg: #FF4B00;
+  --color-head-bg: light-dark(#FF4B00, #b33a00);
 
   /* Logotype */
-  --color-logotype-bg: #fffae2;
-  --color-text-logotype: #fffae2;
+  --color-logotype-bg: light-dark(#fffae2, #2a2a2a);
+  --color-text-logotype: light-dark(#fffae2, #ffffff);
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90eb;
+ --color-menu-bg: light-dark(#6f90eb, #3b4a7a);
+
   /* Links */
-  --color-link-bg: #fffae2;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #99958f; /* used */
+  --color-link-bg: light-dark(#fffae2, #2a2a2a);
+  --color-link-hover: light-dark(#ffffff, #4d4d4d);
+  --color-link-active: light-dark(#99958f, #6a6a6a);
   --border-radius-links: 20px;
 
   /* Headlines og rubrik */
@@ -23,13 +24,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: --font-weight-bold 2rem;
-  --color-headline-bg: #000000;
-  --color-headline-text-page: #fffae2;
+  --color-headline-bg: light-dark(#000000, #e0e0e0);
+  --color-headline-text-page: light-dark(#fffae2, #0d0d0d);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #ffffff;
-
+  --color-text: light-dark(#000000, #f3f3f3);
+  --color-text-inverted: light-dark(#ffffff, #1a1a1a);
   /*  Marginer */
   --margin-head-bottom: 15px;
 
@@ -66,4 +66,12 @@
   --color-info-bg: #fff;
   --color-infobox-1-bg: #fceb94;
   --color-infobox-2-bg: #Def5db;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+html.dark {
+  color-scheme: dark;
 }

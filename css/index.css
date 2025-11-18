@@ -5,7 +5,11 @@
   margin: auto;
   padding: 1rem;
   border-radius: 10px;
-  background: white;
+  background: rgb(10, 10, 10);
+
+  /* lys i light mode, mørk i dark mode */
+  background: light-dark(#ffffff, rgb(10, 10, 10));
+  color: light-dark(#000000, #ffffff);
 }
 
 [popover]::backdrop {

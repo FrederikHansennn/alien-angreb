@@ -67,6 +67,12 @@ h3 {
   font-size: var(--headline3-size);
 }
 
+#Underoverskrift {
+  color: var(--underoverskrift-color);
+}
+
+
+
 main>h1 {
   width: calc(80% - 6rem);
 }
@@ -116,6 +122,7 @@ header nav li a {
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);
 }
+
 
 /* Pilen efter menu-tekst */
 header>nav li>a:after {

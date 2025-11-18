@@ -14,8 +14,8 @@
  --color-menu-bg: light-dark(#6f90eb, #3b4a7a);
 
   /* Links */
-  --color-link-bg: light-dark(#fffae2, #2a2a2a);
-  --color-link-hover: light-dark(#ffffff, #4d4d4d);
+  --color-link-bg: light-dark(#fffae2, #fffae2);
+  --color-link-hover: light-dark(#ffa680, #ffa680);
   --color-link-active: light-dark(#99958f, #6a6a6a);
   --border-radius-links: 20px;
 
@@ -28,8 +28,9 @@
   --color-headline-text-page: light-dark(#fffae2, #0d0d0d);
 
   /* Tekst */
-  --color-text: light-dark(#000000, #f3f3f3);
+  --color-text: light-dark(#000000, #232222);
   --color-text-inverted: light-dark(#ffffff, #1a1a1a);
+  
   /*  Marginer */
   --margin-head-bottom: 15px;
 
@@ -66,7 +67,17 @@
   --color-info-bg: #fff;
   --color-infobox-1-bg: #fceb94;
   --color-infobox-2-bg: #Def5db;
+  --underoverskrift-color: light-dark(#000000, #ffffff);
+
+/* FORM COLORS */
+  --form-bg: light-dark(#f9d385, #ff4b00);
+  --form-border: light-dark(#000000, #bbbbbb);
+  --form-label: light-dark(#000000, #ffffff);
+  --form-input-bg: light-dark(#ffffff, #ffffff);
+  --form-input-text: light-dark(#000000, #ffffff);
+  --form-summary-bg: light-dark(#f9d385, #ff4b00);
 }
+
 
 html {
   color-scheme: light dark;
